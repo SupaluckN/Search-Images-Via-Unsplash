@@ -10,7 +10,7 @@
         galleryDiv.appendChild(createImg);
     }
 
-    // Create header content on top of the gallery by append the h2 element.
+    // Create header content on top of the gallery by append the h4 element.
     function creatText(keyword) {
         const creatText = document.createElement('h4');
 

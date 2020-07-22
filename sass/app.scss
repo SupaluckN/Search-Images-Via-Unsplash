@@ -1,0 +1,14 @@
+$base-color: #333;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem auto;
+    background-color: lighten($base-color, 77%);
+    text-align: center;
+}

@@ -1,5 +1,5 @@
 $base-color: #333;
-
+$primary-color: #ff6347;
 
 * {
     margin: 0;
@@ -9,6 +9,17 @@ $base-color: #333;
 
 body {
     margin: 2rem auto;
-    background-color: lighten($base-color, 77%);
+    background-color: lighten($base-color, 67%);
     text-align: center;
+}
+
+.gallery {
+    margin-top: 2rem;
+
+    img {
+        margin: 0.2rem;
+        //padding: 0.2rem;
+        border: 1px solid lighten($primary-color, 2%);
+        border-radius: 12px;
+    }
 }

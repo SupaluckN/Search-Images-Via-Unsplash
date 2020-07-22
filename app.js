@@ -49,7 +49,7 @@
 
     // the main function for run.
     function run() {
-        // Create Events
+        // Create Event
         const inputKey = document.querySelector('input');
         inputKey.addEventListener('keydown', searchImg);
     }

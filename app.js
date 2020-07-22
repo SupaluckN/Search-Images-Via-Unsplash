@@ -1,5 +1,4 @@
 (() => {
-
     // Append Image Element.
     function appendImg(keyword, index) {
         const createImg = document.createElement('img');
@@ -13,8 +12,9 @@
 
     // Create header content on top of the gallery by append the h2 element.
     function creatText(keyword) {
-        const creatText = document.createElement('h2');
-        creatText.innerHTML = `The result of ${keyword}:`;
+        const creatText = document.createElement('h4');
+
+        creatText.innerHTML = `The result of <span>${keyword}</span> :`;
 
         const galleryDiv = document.querySelector('.gallery');
         galleryDiv.appendChild(creatText);
@@ -22,7 +22,7 @@
 
     // Set Defualt When Input New Keyword
     function defualt() {
-        const creatText = document.createElement('h2');
+        const creatText = document.createElement('h4');
         creatText.innerHTML = '';
 
         const galleryDiv = document.querySelector('.gallery');

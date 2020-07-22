@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +9,44 @@ body {
   margin: 2rem auto;
   background-color: #dedede;
   text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+p {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: #ff6347;
+}
+
+p {
+  color: #3b3b3b;
+}
+
+input {
+  padding: 0.5rem 10rem;
+  border-radius: 50px;
+  border: 1px solid #4d4d4d;
+  font-size: 18px;
+}
+input:focus {
+  outline: none;
 }
 
 .gallery {
   margin-top: 2rem;
+}
+.gallery h4 {
+  margin-bottom: 1.2rem;
+  color: #616161;
+}
+.gallery h4 span {
+  padding: 0.2rem 0.4rem;
+  color: #fbec5d;
+  background-color: #333;
+  border-radius: 6px;
 }
 .gallery img {
   margin: 0.2rem;

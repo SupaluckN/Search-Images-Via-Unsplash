@@ -20,12 +20,23 @@
         galleryDiv.appendChild(creatText);
     }
 
+    // Set Defualt When Input New Keyword
+    function defualt() {
+        const creatText = document.createElement('h2');
+        creatText.innerHTML = '';
+
+        const galleryDiv = document.querySelector('.gallery');
+        galleryDiv.innerHTML = '';
+    }
+
     // Input Keyword.
     function searchImg(event) {
         // Input keyword value.
         const keyword = event.target.value;
 
-        if (event.key == 'Enter') {
+        if (event.key == 'Enter' && keyword) {
+            // Remove old content before new search.
+            defualt()
             // Show header content.
             creatText(keyword);
 
@@ -33,7 +44,6 @@
             for (let i = 1; i <= 12; i++) {
                 appendImg(keyword, i);
             }
-
         }
     }
 

@@ -45,13 +45,16 @@ input:focus {
 .gallery h4 span {
   padding: 0.2rem 0.4rem;
   color: #fbec5d;
-  background-color: #333;
+  background-color: #858585;
   border-radius: 6px;
 }
 .gallery img {
   margin: 0.2rem;
   border: 1px solid #ff6c51;
   border-radius: 12px;
+}
+.gallery img:hover {
+  border: 2px solid #fae62b;
 }
 
 /*# sourceMappingURL=app.css.map */
